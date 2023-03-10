@@ -246,7 +246,7 @@ def user_uploads():
 
         encodeListKnown = findEncodings(images)
 
-        print("Encode complete")
+        print("Encode completed")
         imgsus=face_recognition.load_image_file('pics1/'+filename)
         imgsus=cv2.cvtColor(imgsus,cv2.COLOR_BGR2RGB)
 
