@@ -164,9 +164,9 @@ def regi():
                 server = smtplib.SMTP("smtp.gmail.com", 587)
                 server.starttls()
                 dest=userDetails[0][6]
-                server.login("salvaachyuth@gmail.com", "Achyuth895@")
+                server.login("abc@gmail.com", "Achyuth123")
                 estr="ALERT PERSON  "+userDetails[0][1]+"  WAS FOUND!"+"At "+str(locname)+""
-                server.sendmail("salvaachyuth@gmail.com",dest,estr)
+                server.sendmail("abc@gmail.com",dest,estr)
                 server.quit()
                 cv2.imshow('Webcam', imgmat)
                 cv2.waitKey(3000)
@@ -278,11 +278,11 @@ def user_uploads():
                 server = smtplib.SMTP("smtp.gmail.com", 587)
                 server.starttls()
                 dest = userDetails[0][6]
-                server.login("salvaachyuth@gmail.com", "Achyuth895@")
+                server.login("abc@gmail.com", "Achyuth123")
                 emsg=EmailMessage()
                 emsg.set_content("ALERT : PERSON  " + userDetails[0][1] + "  WAS FOUND!")
                 emsg['Subject']='IMPORTANT NOTICE'
-                emsg['From']="salvaachyuth@gmail.com"
+                emsg['From']="abc@gmail.com"
                 emsg['To']=dest
                 #estr = "ALERT PERSON  " + userDetails[0][1] + "  WAS FOUND!"
                 #server.sendmail("salvaachyuth@gmail.com", dest, estr)
