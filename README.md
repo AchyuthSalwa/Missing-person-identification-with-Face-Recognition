@@ -9,4 +9,12 @@ It also allows normal people to upload the pictures of any suspicious persons 
 
 #The Inface looks like below
 
+For Logging in
 ![image](https://user-images.githubusercontent.com/97206713/224354519-66cb113c-e980-4203-abb3-5456df42e6ae.png)
+
+Admin Dashboard
+![image](https://user-images.githubusercontent.com/97206713/224355122-b5828d9a-27fb-4bda-a2de-01bb45957693.png)
+
+Adding complaint
+![image](https://user-images.githubusercontent.com/97206713/224355350-fbc29660-a2ec-4345-9c2d-e17627afa8ea.png)
+
