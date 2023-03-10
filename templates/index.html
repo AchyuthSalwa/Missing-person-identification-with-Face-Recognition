@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style1.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body>
+	  <br>
+	  {% if msg %}
+        <p style="text-align:center"><strong>ALERT</strong>: {{msg}}</p>
+    {% endif %}
+		<div class="register">
+			<h1> ADMIN LOGIN</h1>
+			<form action="/ " method="post" autocomplete="off">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="adminname" placeholder="ADMINNAME" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="text" name="password" placeholder="PASSWORD" id="password" required>
+				<input type="submit" value="Login ">
+			</form>
+			<form action="{{url_for('aac1')}}" >
+				<input style="background-color:#708090" type="submit" value="USER?">
+				<br>
+			</form>
+		</div>
+	</body>
+</html>

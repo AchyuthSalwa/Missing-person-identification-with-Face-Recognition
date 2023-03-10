@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='material-design-iconic-font.min.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+    <!-- Font Icon -->
+
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" class="appointment-form" id="appointment-form" action="{{ url_for('user_uploads')}}"  enctype="multipart/form-data">
+                <h2 style="color:#3a518d">ADD MISSING COMPLAINT</h2>
+                <div class="form-group-1">
+                   <!-- <input type="text" name="title" id="title" placeholder="Title" required />-->
+
+                    <input type="text" name="uname" id="name" placeholder="Your Name" required />
+                    <input type="email" name="email" id="name" placeholder="Your email" required />
+                   <!--<input type="email" name="email" id="email" placeholder="Email" required />-->
+                    <input type="number" name="contact" id="phone_number" placeholder="Your Phone number" required />
+
+                </div>
+                <!--<div class="form-group-2">
+                    <h3>How would you like to be contacted ?</h3>
+                    <div class="select-list">
+                        <select name="confirm_type" id="confirm_type">
+                            <option seleected value="">By phone</option>
+                            <option value="by_email">By email</option>
+                        </select>
+                    </div>-->
+                    <div class="form-group-3">
+                   <h3 style="color:#3a518d">Insert pic of suspicious person</h3>
+                        <input type="file" name="photo"  placeholder="upload pic" required>
+                   </div>
+                <!--<div class="form-check">
+                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
+                </div>-->
+                <div class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Find complaint" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script type=text/javascript src="{{
+  url_for('static', filename='jquery.min.js') }}"></script>
+    <script type=text/javascript src="{{
+  url_for('static', filename='main.js') }}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

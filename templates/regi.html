@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style1.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body>
+        <br>
+		<br>
+		<br>
+
+		{% if msg %}
+        <p style="text-align:center"><strong>ALERT</strong>: {{msg}}</p>
+    {% endif %}
+		<div class="register">
+			<form action="{{url_for('aac')}}" >
+
+                <input type="submit" value="ADD COMPLAINT" >
+            </form>
+
+
+			<form action="{{ url_for('regi')}}" >
+
+                <input type="submit" value="START SEARCH" >
+
+			</form>
+
+			<form action="{{ url_for('delete')}}" >
+
+                <input type="submit" value="DELETE COMPLAINT" >
+
+			</form>
+
+			<form action="{{ url_for('pro')}}" >
+
+                <input type="submit" value="LOG OUT" >
+
+			</form>
+            <br>
+
+
+		</div>
+	</body>
+</html>

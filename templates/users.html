@@ -1,0 +1,71 @@
+<table border=1>
+{% for user in details %}
+<TR>
+   <TD >{{user[0]}}</TD>
+   <TD >{{user[1]}}</TD>
+
+</TR>
+{% endfor %}
+    </table>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <div class="container">
+               <br>
+        <br>
+                <form class="form-group text-center" action="{{url_for('aac')}}" enctype="multipart">
+                    <input type="submit" value="ADD COMPLAINT" name="sub" class="btn btn-primary btn-block btn-lg" style="
+                            background-color: #336600;
+                            color: white;
+                            " >
+                </form>
+
+                <form class="form-group text-center" action="{{ url_for('regi')}}" method="POST" enctype="multipart">
+
+                    <input type="submit" value="START SEARCH" name="sub" class="btn btn-primary btn-block btn-lg" style="
+                            background-color: #336600;
+                            color: white;
+                            " >
+                </form>
+                    <form class="form-group text-center" action="{{ url_for('regi')}}" method="POST" enctype="multipart">
+
+                    <input type="submit" value="START SEARCH" name="sub" class="btn btn-primary btn-block btn-lg" style="
+                            background-color: #336600;
+                            color: white;
+                            " >
+                </form>
+                    <form class="form-group text-center" action="{{ url_for('regi')}}" method="POST" enctype="multipart">
+
+                    <input type="submit" value="START SEARCH" name="sub" class="btn btn-primary btn-block btn-lg" style="
+                            background-color:#336600;
+                            color: white;
+
+                            " >
+                        <br>
+
+                </form>
+
+    </div>
+
+
+</body>
+</html>-->

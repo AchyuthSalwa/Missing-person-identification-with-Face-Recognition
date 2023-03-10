@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+
+<details>
+  <summary>Register complaint</summary>
+
+
+                    <form class="form-group text-center" action="{{ url_for('regis')}}" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                        <div class="col-lg-6">
+
+                        <label>Insert pic</label>
+                        <input type="file" name="photo" class="form-control" placeholder="upload photo" required>
+                        </div>
+
+                            <div class="col-lg-6">
+                            <label>Contact Number</label>
+                            <input type="number" name="contact" class="form-control" placeholder=" ENTER YOUR CONTACT" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>First Name:</label>
+                                <input type="text" name="fname" class="form-control" placeholder="Enter victim First name..." required>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <label>Last Name:</label>
+                                <input type="text" name="lname" class="form-control" placeholder="Enter victim Last name..." required >
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+
+                        <select class="form-control" name="gender" required>
+                            <option>Select gender...</option>
+                            <option >Male</option>
+                            <option >Female</option>
+                            <option >Other</option>
+                        </select>
+                        <br>
+
+                    </div>
+
+                        <br>
+
+                        <input type="submit" value="submit" name="submit" class="btn btn-primary btn-block btn-lg" style="
+                            background-color: #04AA6D;
+                            color: white;
+                            " >
+                        <br>
+
+
+
+
+                    </form>
+ </details>
+
+</body>
+</html>

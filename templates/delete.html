@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style1.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body>
+        <br>
+		<br>
+		<br>
+
+		{% if msg %}
+        <p style="text-align:center"><strong>ALERT</strong>: {{msg}}</p>
+    {% endif %}
+		<div class="register">
+			<form action="{{url_for('delwork')}}" method="post">
+                   <input type="text" name="fname" id="name" placeholder="First Name" required />
+                   <!--<input type="email" name="email" id="email" placeholder="Email" required />-->
+                    <input type="text" name="contact" id="phone_number" placeholder="Phone number" required />
+                <input type="submit" value="DELETE COMPLAINT" >
+            </form>
+
+			<form action="{{ url_for('pro')}}" >
+
+                <input type="submit" value="LOG OUT" >
+
+			</form>
+            <br>
+
+
+		</div>
+	</body>
+</html>
