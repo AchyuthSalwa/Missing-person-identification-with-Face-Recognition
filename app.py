@@ -282,7 +282,7 @@ def user_uploads():
                 emsg=EmailMessage()
                 emsg.set_content("ALERT : PERSON  " + userDetails[0][1] + "  WAS FOUND!")
                 emsg['Subject']='IMPORTANT NOTICE'
-                emsg['From']="abcd@gmail.com"
+                emsg['From']="abc@gmail.com"
                 emsg['To']=dest
                 #estr = "ALERT PERSON  " + userDetails[0][1] + "  WAS FOUND!"
                 #server.sendmail("salvaachyuth@gmail.com", dest, estr)
